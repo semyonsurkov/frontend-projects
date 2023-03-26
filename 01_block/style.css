@@ -1,14 +1,21 @@
 body {
-  background: #F9F9FA;
-
+  background-color: #f9f9fa;
 }
-.container {
-  padding: 0 105px;
+
+* {
   box-sizing: border-box;
-  background-color:
+  padding: 0;
+  margin: 0;
 }
 
-.main__paragraph {
+.page {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.page__title {
+  text-align: center;
+  text-transform: uppercase;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 800;
@@ -16,64 +23,61 @@ body {
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #4343FF 45%, #F96D6D 55%);
+
+  background: linear-gradient(90deg, #4343ff 45%, #f96d6d 55%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin-top: 80px;
+  margin-bottom: 22px;
 }
-.main__header {
-  color: black;
+
+.page__header {
   text-align: center;
-  font-family: 'GalanoGrotesque-Medium';
-  font-size: 46px;
-  line-height: 120%;
-  
-}
-.flex__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 
-ul {
+.blocks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  gap: 20px;
 }
 
-li {
-  width: calc(33.33% - 10px);
-  margin-bottom: 20px;
-  background: #FFFFFF;
-  padding: 22px;
-  box-sizing: border-box;
+.blocks__item {
   max-width: 387px;
-  height: 225px;
+  max-height: 225px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background-color: white;
 }
 
-.main__blocks__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.main__blocks__list__item {
-  list-style-type: none;
-  margin-bottom: 40px;
-  flex-basis: calc(33.33% - 10px);
-  max-width: calc(33.33% - 10px);
-}
-.main__blocks__list__item__header {
+.blocks__item-title {
+  margin-left: 22px;
+  margin-top: 22px;
+  margin-bottom: 0;
+  text-transform: uppercase;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 23px;
   text-transform: uppercase;
+  color: #110c11;
 }
-.main__blocks__list__item__text {
-  width: 343px;
-  height: 130px;
+
+.blocks__item-text {
+  margin-left: 22px;
+  margin-top: 10px;
+  margin-right: 22px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  line-height: 26px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #5c5c5c;
 }
