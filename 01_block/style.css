@@ -53,7 +53,7 @@ body {
 
 .blocks__item {
   max-width: 387px;
-  max-height: 225px;
+  max-height: 250px;
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -88,72 +88,23 @@ body {
   color: #5c5c5c;
 }
 
-/* Для смартфона */
+/* For smartphones */
 @media screen and (max-width: 480px) {
-  .page {
-    max-width: 100%;
-    padding: 0 20px;
+  .page__header {
+    font-size: 24px;
   }
-
-  .page__title {
-    font-size: 10px;
-    line-height: 12px;
-    margin-top: 40px;
-    margin-bottom: 10px;
+  .blocks {
+    margin-left: 14px;
   }
-
-  .blocks__item {
-    max-width: 100%;
-    max-height: none;
-  }
-
-  .blocks__item-title {
-    font-size: 14px;
-    line-height: 18px;
-    margin-left: 0;
-    margin-top: 15px;
-  }
-
   .blocks__item-text {
-    font-size: 14px;
-    line-height: 20px;
-    margin-left: 0;
-    margin-top: 5px;
-    margin-right: 0;
+    padding-bottom: 22px;
   }
 }
-
-/* Для планшета */
+/* For tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .page {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-
-  .page__title {
-    font-size: 12px;
-    line-height: 14px;
-    margin-top: 60px;
-    margin-bottom: 15px;
-  }
-
-  .blocks__item {
-    max-width: 100%;
-    max-height: none;
-  }
-
-  .blocks__item-title {
-    font-size: 16px;
-    line-height: 20px;
-    margin-left: 0;
-    margin-top: 15px;
-  }
-
-  .blocks__item-text {
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 0;
-    margin-top: 5px;
-    margin-right: 0;
+  .blocks__item{
+    max-width: 45%;
+    margin-left: 15px;
+    margin-bottom: 20px;
   }
 }
