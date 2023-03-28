@@ -11,12 +11,12 @@ body {
   margin: 0;
 }
 
-.page {
+.main {
   max-width: 1230px;
   margin: 0 auto;
 }
 
-.page__title {
+.cards__title {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Galano Grotesque', sans-serif;
@@ -35,7 +35,7 @@ body {
   margin-bottom: 22px;
 }
 
-.page__header {
+.cards__header {
   text-align: center;
   margin-bottom: 80px;
   font-family: 'Galano Grotesque', sans-serif;
@@ -45,13 +45,13 @@ body {
   text-align: center;
 }
 
-.blocks {
+.cards__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.blocks__item {
+.cards__item {
   max-width: 387px;
   max-height: 250px;
   display: flex;
@@ -60,7 +60,7 @@ body {
   background-color: white;
 }
 
-.blocks__item-title {
+.cards__item-title {
   margin-left: 22px;
   margin-top: 22px;
   margin-bottom: 0;
@@ -75,7 +75,7 @@ body {
   color: #110c11;
 }
 
-.blocks__item-text {
+.cards__item-text {
   margin-left: 22px;
   margin-top: 10px;
   margin-right: 22px;
@@ -93,16 +93,16 @@ body {
   .page__header {
     font-size: 24px;
   }
-  .blocks {
+  .cards {
     margin-left: 14px;
   }
-  .blocks__item-text {
+  .cards__item-text {
     padding-bottom: 22px;
   }
 }
 /* For tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .blocks__item{
+  .cards__item {
     max-width: 45%;
     margin-left: 15px;
     margin-bottom: 20px;
