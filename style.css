@@ -11,12 +11,12 @@ body {
   margin: 0;
 }
 
-.page {
+.main {
   max-width: 1230px;
   margin: 0 auto;
 }
 
-.page__title {
+.cards__title {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Galano Grotesque', sans-serif;
@@ -35,7 +35,7 @@ body {
   margin-bottom: 22px;
 }
 
-.page__header {
+.cards__header {
   text-align: center;
   margin-bottom: 80px;
   font-family: 'Galano Grotesque', sans-serif;
@@ -45,22 +45,22 @@ body {
   text-align: center;
 }
 
-.blocks {
+.cards__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.blocks__item {
+.cards__item {
   max-width: 387px;
-  max-height: 225px;
+  max-height: 250px;
   display: flex;
   flex-direction: column;
   gap: 35px;
   background-color: white;
 }
 
-.blocks__item-title {
+.cards__item-title {
   margin-left: 22px;
   margin-top: 22px;
   margin-bottom: 0;
@@ -75,7 +75,7 @@ body {
   color: #110c11;
 }
 
-.blocks__item-text {
+.cards__item-text {
   margin-left: 22px;
   margin-top: 10px;
   margin-right: 22px;
@@ -88,72 +88,23 @@ body {
   color: #5c5c5c;
 }
 
-/* Для смартфона */
+/* For smartphones */
 @media screen and (max-width: 480px) {
-  .page {
-    max-width: 100%;
-    padding: 0 20px;
+  .page__header {
+    font-size: 24px;
   }
-
-  .page__title {
-    font-size: 10px;
-    line-height: 12px;
-    margin-top: 40px;
-    margin-bottom: 10px;
+  .cards {
+    margin-left: 14px;
   }
-
-  .blocks__item {
-    max-width: 100%;
-    max-height: none;
-  }
-
-  .blocks__item-title {
-    font-size: 14px;
-    line-height: 18px;
-    margin-left: 0;
-    margin-top: 15px;
-  }
-
-  .blocks__item-text {
-    font-size: 14px;
-    line-height: 20px;
-    margin-left: 0;
-    margin-top: 5px;
-    margin-right: 0;
+  .cards__item-text {
+    padding-bottom: 22px;
   }
 }
-
-/* Для планшета */
+/* For tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .page {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-
-  .page__title {
-    font-size: 12px;
-    line-height: 14px;
-    margin-top: 60px;
-    margin-bottom: 15px;
-  }
-
-  .blocks__item {
-    max-width: 100%;
-    max-height: none;
-  }
-
-  .blocks__item-title {
-    font-size: 16px;
-    line-height: 20px;
-    margin-left: 0;
-    margin-top: 15px;
-  }
-
-  .blocks__item-text {
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 0;
-    margin-top: 5px;
-    margin-right: 0;
+  .cards__item {
+    max-width: 45%;
+    margin-left: 15px;
+    margin-bottom: 20px;
   }
 }
